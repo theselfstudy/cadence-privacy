@@ -621,8 +621,9 @@
         <ol>
           <li>
             <strong>Signed In &amp; Synced Mode</strong> &mdash;
-            This is the mode name if you have a Google Sheet linked to Cadence. Each time you click one of the "Sync with Google Sheets" buttons around the application, Cadence will push all of your current entries, settings, and saved filters into your Google Sheet for safe storage, and also pull any data from the sheet to make sure everything is up to date. You can forego syncing for 48 hours until you're prompted by the UI to sync.
+            This is the mode name if you have a Google Sheet linked to Cadence. Each time you click one of the "Sync with Google Sheets" buttons around the application, Cadence will push all of your current entries, settings, and saved filters into your Google Sheet for safe storage, and also pull any data from the sheet to make sure everything is up to date. You can forego syncing for up to 48 hours until you're prompted by the UI to sync.
             <em>This is the recommended way of using Cadence as this secures your data and ensures your data is safely synced outside of your browser regardless of whether you clear your history or switch to a new device.</em>
+            <div class="callout callout-teal" style="margin-top: 0.75rem;"><strong>Existing users:</strong> If you already have a Google Sheet with Cadence data and are setting up on a new device, you can restore your entries, settings, and filters instead of starting fresh. See the <a href="#how-do-i-restore-my-stuff">How do I restore my stuff</a> FAQ for details.</div>
           </li>
           <li>
             <strong>Anonymous Mode</strong> &mdash;
@@ -631,11 +632,15 @@
         </ol>
 
         <h3 id="where-do-i-start">Where do I start?</h3>
-        <p>When you first visit Cadence, you will be navigated to the landing page. Click "Get Started" when you've read through what you can do with Cadence. You'll be given 2 options:</p>
+        <p>When you first visit Cadence, you will be navigated to the landing page. Click "Get Started" when you've read through what you can do with Cadence. You'll be given 3 options:</p>
         <ul>
           <li>
-            <strong>Signed In &amp; Synced Mode</strong> &mdash;
+            <strong>New User &mdash; Signed In &amp; Synced Mode</strong> &mdash;
             If you want to start off with a Google Sheet so that you don't have to set it up later, click this option. This means that all of your entries, settings, and filters will be backed up to that Google Sheet.
+          </li>
+          <li>
+            <strong>Existing User &mdash; Restore Data &amp; Settings</strong> &mdash;
+            If you're returning to Cadence and already have a Google Sheet with existing Cadence data, click this option. You'll be taken to the Restore page where you can paste your Google Sheet URL and restore all of your entries, settings, and filters.
           </li>
           <li>
             <strong>Anonymous Mode</strong> &mdash;
@@ -643,9 +648,8 @@
           </li>
         </ul>
         <div class="callout callout-teal">Make sure that you are the editor of the Google Sheet you'd like linked. That is the account you'll select in popups to authorize Cadence to read to and write from the Google Sheet to save your entries and settings.</div>
-        <div class="callout callout-teal">If you are returning to Cadence with a Google Sheet that already has entries, see the <a href="#how-do-i-restore-my-stuff">How do I restore my stuff</a> FAQ.</div>
         <div class="callout callout-red"><strong>Please Note:</strong> It's recommended to connect a Google Sheet in the case that your browser crashes, or if you clear your browsing history often. Not doing so can cause data loss. See the <a href="#can-i-lose-my-data">Can I lose my data</a> FAQ for more information.</div>
-        <p>After selecting one of the modes, click the "Continue to Settings" button to continue.</p>
+        <p>After selecting one of the options, click the "Continue" button.</p>
 
         <h3 id="how-do-i-connect-a-google-sheet">How do I connect a Google Sheet?</h3>
         <ol>
@@ -658,11 +662,11 @@
 
         <h3 id="how-do-i-restore-my-stuff">How do I restore my stuff?</h3>
         <p>If you have a Google Sheet with entries and are returning to Cadence or switching from one device to another, welcome back! Here are steps to restore your data:</p>
-        <div class="callout callout-green"><strong>Switching devices?</strong> Before setting up Cadence on your new device, ensure all of your latest entries are saved and ready to restore on your new device. See the <a href="#how-do-i-connect-a-google-sheet">Connect a Google Sheet FAQ</a> if you have yet to connect to a Sheet. Initiate a sync by tapping any "Sync with Google Sheets" buttons in the app and authorize with your account to confirm that the sync completes successfully.</div>
+        <div class="callout callout-green"><strong>Switching devices?</strong> Before setting up Cadence on your new device, ensure all of your latest entries are saved and ready to restore to your new device. See the <a href="#how-do-i-connect-a-google-sheet">Connect a Google Sheet FAQ</a> if you have yet to connect to a Sheet. Initiate a sync by tapping any "Sync with Google Sheets" buttons in the app and authorize with your account to confirm that the sync completes successfully.</div>
         <ol>
           <li>On the Welcome page, click "Get Started".</li>
-          <li>A popup will show and within the first option "Signed In &amp; Synced Mode", you should see the "Already set up?" blue highlighted section. Click "restore your settings and entries here" dark blue hyperlink.</li>
-          <li>Add your Google Sheet URL to the textbox and then click "Sign In with Google &amp; Restore".</li>
+          <li>In the popup, select the <strong>"Existing User &mdash; Restore Data &amp; Settings"</strong> option and click "Continue".</li>
+          <li>On the Restore page, paste your Google Sheet URL into the textbox and then click "Sign In with Google &amp; Restore".</li>
         </ol>
         <div class="callout callout-teal">You will be prompted to authorize with your account. Please select the same account that your Google Sheet was created with.</div>
         <p>Cadence will automatically begin restoring your entries, settings, filters, and even the name of your Google Sheet. When restoration is complete, you'll be routed to the dashboard and ready to make new entries.</p>
