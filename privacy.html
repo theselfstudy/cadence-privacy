@@ -661,13 +661,13 @@
         <ul>
           <li><strong>Purpose:</strong> Authenticates the user and reads/writes data to the user's own Google Sheet</li>
           <li><strong>Data processed:</strong> Only the health entries, settings, and filters that the user explicitly syncs</li>
-          <li><strong>All API calls are made directly from the user's browser</strong> to Google's servers — Cadence does not proxy or intercept this data</li>
+          <li><strong>All API calls are made directly from the user's browser</strong> to Google's servers. Cadence does not proxy or intercept this data</li>
         </ul>
 
         <h3>Google Apps Script (Contact Form)</h3>
         <ul>
           <li><strong>Purpose:</strong> The contact form at <a href="https://the-self-study.com/cadence/dashboard/contact">the-self-study.com/cadence/dashboard/contact</a> sends messages to a Google Apps Script, which delivers the submission as an email to the developer and logs it in a private Google Sheet for record-keeping</li>
-          <li><strong>Data collected:</strong> Name, email address, and message content — submitted voluntarily through the contact form only</li>
+          <li><strong>Data collected:</strong> Name, email address, and message content which are submitted voluntarily through the contact form only</li>
           <li><strong>Data storage:</strong> Submissions are recorded in a Google Sheet accessible only to the developer. This is used solely to track and respond to support inquiries. No health data is collected through this form</li>
           <li><strong>This is the only data that leaves the user's browser and passes through a Cadence-controlled server route</strong> (<code>/api/contact</code>), and it is forwarded immediately to the Google Apps Script without being stored on Cadence's server</li>
         </ul>
@@ -689,7 +689,7 @@
         <div class="callout callout-plumb">
           <strong>Cadence does not sell, rent, trade, or monetize user data.</strong>
         </div>
-        <p>No user data — including health entries, settings, Google account information, or contact form submissions — is sold to or shared with third parties for commercial purposes. Cadence has no advertising relationships, data broker partnerships, or revenue derived from user data.</p>
+        <p>No user data - including health entries, settings, Google account information, or contact form submissions - is sold to or shared with third parties for commercial purposes. Cadence has no advertising relationships, data broker partnerships, or revenue derived from user data.</p>
       </div>
 
       <!-- Data Retention & Deletion -->
@@ -750,7 +750,7 @@
         </ul>
 
         <h3>Request Information</h3>
-        <p>You may contact us at any time to ask what data, if any, Cadence holds related to you. Given Cadence's architecture, the answer in most cases is: none — your data lives in your browser and your Google Sheet.</p>
+        <p>You may contact us at any time to ask what data, if any, Cadence holds related to you. Given Cadence's architecture, the answer in most cases is: none. Your data lives in your browser and your Google Sheet.</p>
       </div>
 
       <!-- HIPAA Notice -->
