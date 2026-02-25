@@ -466,6 +466,7 @@
       <a href="#where-do-i-start">Getting started</a>
       <a href="#how-do-i-connect-a-google-sheet">Connect a Google Sheet</a>
       <a href="#how-do-i-restore-my-stuff">Restore from sheet</a>
+      <a href="#transfer-data-between-devices">Transfer between devices</a>
       <a href="#download-csv">Download CSV</a>
       <a href="#download-pdf">Download PDF</a>
 
@@ -504,6 +505,7 @@
           <a href="#where-do-i-start" onclick="document.getElementById('mobileNav').classList.remove('open')">Getting started</a>
           <a href="#how-do-i-connect-a-google-sheet" onclick="document.getElementById('mobileNav').classList.remove('open')">Connect a Google Sheet</a>
           <a href="#how-do-i-restore-my-stuff" onclick="document.getElementById('mobileNav').classList.remove('open')">Restore from sheet</a>
+          <a href="#transfer-data-between-devices" onclick="document.getElementById('mobileNav').classList.remove('open')">Transfer between devices</a>
           <a href="#download-csv" onclick="document.getElementById('mobileNav').classList.remove('open')">Download CSV</a>
           <a href="#download-pdf" onclick="document.getElementById('mobileNav').classList.remove('open')">Download PDF</a>
         </div>
@@ -597,6 +599,7 @@
           <li>Using a different device <strong>will not</strong> carry data over</li>
         </ul>
         <div class="callout callout-teal">We recommend connecting a Google Sheet if you'd like an easier time switching devices or seeing all your data. See the <a href="#how-do-i-connect-a-google-sheet">How do I connect a Google Sheet</a> FAQ.</div>
+        <div class="callout callout-plumb"><strong>Note on CSV exports:</strong> While you can <a href="#download-csv">download your data as a CSV</a>, Cadence does not currently support restoring from a CSV file. A Google Sheet is the only way to back up and restore your data.</div>
 
         <h3 id="do-i-need-an-account">Do I need to use an account to use Cadence?</h3>
         <p><strong>No.</strong> You can use Cadence without signing in with an account. This is known as "Anonymous Mode" in the app. In Anonymous Mode, data is stored only on your current device.</p>
@@ -653,23 +656,55 @@
 
         <h3 id="how-do-i-connect-a-google-sheet">How do I connect a Google Sheet?</h3>
         <ol>
-          <li>Navigate to the Dashboard by clicking the gear icon on the top right of the page.</li>
+          <li>Navigate to Settings by clicking the gear icon on the top right of the page.</li>
           <li>Locate the "Google Sheets Integration" section. Here, you'll have a space to copy and paste your preferred blank Google Sheet.</li>
-          <li>Click the "Connect a Google Sheet" button, then "Continue" on the popup.</li>
-          <li>Scroll to the bottom of the Settings page and click the "Sync with Google Sheets" button to complete the first sync.</li>
+          <li>Click the "Connect a Google Sheet" button. A confirmation popup will appear showing that your sheet is connected.</li>
+          <li>Click the "Sync with Google Sheets" button directly in the popup to complete your first sync. You'll see a progress screen as your entries, settings, and filters are pushed to the sheet.</li>
         </ol>
-        <div class="callout callout-teal">If you've made a mistake after connecting the Google Sheet, click either the "Edit" button to edit the URL. If you want to disconnect and try again, click the "Disconnect" button.</div>
+        <div class="callout callout-teal">If you've made a mistake after connecting the Google Sheet, click the "Edit" button to edit the URL. If you want to disconnect and try again, click the "Disconnect" button.</div>
 
         <h3 id="how-do-i-restore-my-stuff">How do I restore my stuff?</h3>
-        <p>If you have a Google Sheet with entries and are returning to Cadence or switching from one device to another, welcome back! Here are steps to restore your data:</p>
-        <div class="callout callout-green"><strong>Switching devices?</strong> Before setting up Cadence on your new device, ensure all of your latest entries are saved and ready to restore to your new device. See the <a href="#how-do-i-connect-a-google-sheet">Connect a Google Sheet FAQ</a> if you have yet to connect to a Sheet. Initiate a sync by tapping any "Sync with Google Sheets" buttons in the app and authorize with your account to confirm that the sync completes successfully.</div>
+        <p>If you have a Google Sheet with existing Cadence data and need to restore it &mdash; whether you cleared your browser, reinstalled, or are returning after some time &mdash; here's how:</p>
+        <div class="callout callout-red"><strong>Before you restore:</strong> Make sure your Google Sheet has your latest data. If you haven't synced recently on your other device, open Cadence there first and tap any "Sync with Google Sheets" button to push your latest entries to the sheet.</div>
         <ol>
-          <li>On the Welcome page, click "Get Started".</li>
-          <li>In the popup, select the <strong>"Existing User &mdash; Restore Data &amp; Settings"</strong> option and click "Continue".</li>
-          <li>On the Restore page, paste your Google Sheet URL into the textbox and then click "Sign In with Google &amp; Restore".</li>
+          <li>On the Welcome page, click <strong>"Get Started"</strong>.</li>
+          <li>Select <strong>"Existing User &mdash; Restore Data &amp; Settings"</strong> and click "Continue".</li>
+          <li>Paste your Google Sheet URL and click <strong>"Sign In with Google &amp; Restore"</strong>.</li>
         </ol>
         <div class="callout callout-teal">You will be prompted to authorize with your account. Please select the same account that your Google Sheet was created with.</div>
-        <p>Cadence will automatically begin restoring your entries, settings, filters, and even the name of your Google Sheet. When restoration is complete, you'll be routed to the dashboard and ready to make new entries.</p>
+        <p>Cadence will automatically restore your entries, settings, filters, and sheet name. When complete, you'll be routed to the dashboard and ready to make new entries.</p>
+        <div class="callout callout-green"><strong>Switching devices?</strong> See the <a href="#transfer-data-between-devices">How do I transfer my data from one device to another?</a> FAQ for a complete step-by-step walkthrough.</div>
+
+        <h3 id="transfer-data-between-devices">How do I transfer my data from one device to another?</h3>
+        <p>Transferring your data between devices requires a Google Sheet. The Google Sheet acts as the bridge: you sync your data to it from your current device, then restore from it on your new device. Here's the full process:</p>
+
+        <h4 style="color: var(--green); margin-top: 1.25rem; margin-bottom: 0.5rem;">Step 1: Prepare a Google Sheet</h4>
+        <p>If you haven't already, create a new blank Google Sheet from the Google account you'd like to use with Cadence. Make sure you are the <strong>editor</strong> of the sheet. This is the account you'll authorize when syncing.</p>
+        <p>Once your sheet is created, copy the URL so you can paste it into Cadence:</p>
+        <ul>
+          <li><strong>On desktop:</strong> Copy the URL directly from your browser's address bar.</li>
+          <li><strong>On mobile:</strong> Open the sheet in the Google Sheets app, tap <strong>Share</strong>, then tap <strong>"Copy link"</strong>.</li>
+        </ul>
+
+        <h4 style="color: var(--green); margin-top: 1.25rem; margin-bottom: 0.5rem;">Step 2: Connect &amp; sync on your current device</h4>
+        <ol>
+          <li>On your current device, open Cadence and navigate to <strong>Settings</strong> (gear icon, top right).</li>
+          <li>In the "Google Sheets Integration" section, paste your Google Sheet URL and click <strong>"Connect a Google Sheet"</strong>.</li>
+          <li>A confirmation popup will appear. Click the <strong>"Sync with Google Sheets"</strong> button directly in the popup and authorize with the same Google Account that has <strong>edit access</strong> or <strong>ownership</strong> of the Google Sheet. This will allow Cadence push all of your entries, settings, and filters to your sheet.</li>
+          <li>Wait for the sync to complete. You'll see a progress screen showing entries, settings, and filters being pushed.</li>
+        </ol>
+        <div class="callout callout-red"><strong>Important:</strong> Do not skip this step. Your Google Sheet must have all of your latest data before you set up on your new device. If you already have a sheet connected, simply tap any "Sync with Google Sheets" button in the app to make sure everything is up to date.</div>
+
+        <h4 style="color: var(--green); margin-top: 1.25rem; margin-bottom: 0.5rem;">Step 3: Restore on your new device</h4>
+        <ol>
+          <li>On your new device, open Cadence and click <strong>"Get Started"</strong> on the Welcome page.</li>
+          <li>Select <strong>"Existing User &mdash; Restore Data &amp; Settings"</strong> and click "Continue".</li>
+          <li>Paste your Google Sheet URL and click <strong>"Sign In with Google &amp; Restore"</strong>.</li>
+          <li>Authorize with the <strong>same Google account</strong> that owns the sheet.</li>
+        </ol>
+        <p>Cadence will restore your entries, settings, filters, and sheet name. When complete, you'll be taken to the dashboard and ready to go.</p>
+        <div class="callout callout-teal">For the full restore walkthrough, see the <a href="#how-do-i-restore-my-stuff">How do I restore my stuff?</a> FAQ above.</div>
+        <div class="callout callout-green"><strong>That's it!</strong> Your data now lives in your Google Sheet and can be restored on any device at any time. Just remember to sync regularly so your sheet stays up to date.</div>
 
         <h3 id="download-csv">I want to download my data as a CSV file</h3>
         <p>If you have entries and would like to download your data:</p>
@@ -679,6 +714,7 @@
         </ol>
         <div class="callout callout-teal">If you're not seeing all of your data, please make sure that the "Show" filter is set to "All Time".</div>
         <div class="callout callout-teal">If the "Export CSV" button is unclickable, it means you have yet to make any entries, or the time frame you've chosen has no data. Try expanding your date filters or begin by adding an entry.</div>
+        <div class="callout callout-plumb"><strong>Please note:</strong> CSV export is currently a one-way download. Cadence does not support importing or restoring data from a CSV file, even if the CSV was originally exported from Cadence. To back up your data in a way that can be restored later, <a href="#how-do-i-connect-a-google-sheet">connect a Google Sheet</a>.</div>
 
         <h3 id="download-pdf">I want to download my data as a PDF</h3>
         <p>If you have entries and would like to download your data as a PDF:</p>
